@@ -47,6 +47,6 @@ const rendererConfig = {
 };
 
 module.exports = [
-    Object.assign(commonConfig, mainConfig),
-    Object.assign(commonConfig, rendererConfig),
+    Object.assign({}, commonConfig, mainConfig),
+    Object.assign({}, commonConfig, rendererConfig),
 ];
