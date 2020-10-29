@@ -1,0 +1,37 @@
+directories:
+    output: dist
+    buildResources: bundle
+
+files:
+    - bundle/**/*.js
+    - views/**/*.html
+
+win:
+    publish:
+        - github
+    target:
+        - target: nsis
+          arch:
+              - x64
+              - ia32
+        - target: zip
+          arch:
+              - x64
+              - ia32
+
+mac:
+    category: public.app-category.utilities
+    publish:
+        - github
+    target:
+        - dmg
+        - zip
+
+linux:
+    publish:
+        - github
+    target:
+        - AppImage
+        - snap
+        - deb
+        - zip
