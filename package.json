@@ -1,7 +1,7 @@
 {
     "name": "electron-typescript-litelement-quickstart",
     "description": "Quickstart repository for developing desktop applications with Electron, TypeScript and LitElement",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "license": "MIT",
     "main": "bundle/main.js",
     "author": {
